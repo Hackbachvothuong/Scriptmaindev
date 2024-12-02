@@ -2556,7 +2556,7 @@ infor:AddButton({
         Title = "Discord Hiru Hub",
         Description = "Copy Link Discord",
         Callback = function()
-        setclipboard("https://discord.gg/ZwRXDs4M")
+        setclipboard("https://discord.gg/c5EYjcvC")
     end
 })    
 infor:AddButton({
