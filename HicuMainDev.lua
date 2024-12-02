@@ -1,4 +1,6 @@
 print("Loading Script")
+getgenv()['getupvalues'] = debug.getupvalues
+getgenv()['getupvalue'] = debug.getupvalues
 game.StarterGui:SetCore(
 "SendNotification",
 {
