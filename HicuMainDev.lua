@@ -2550,7 +2550,7 @@ infor:AddParagraph({
 })
 infor:AddParagraph({
         Title = "👥️ DEVELOPER",
-        Content = "HIRU HUB , MATSUNE HUB"
+        Content = "HIRU HUB , XERTER HUB , MATSUNE HUB"
 })
 infor:AddButton({
         Title = "Discord Hiru Hub",
