@@ -93,9 +93,6 @@ if getgenv().AntiCrash then
     else
     print("anti crash false")
 end
-repeat
-    wait()
-until game.Players.LocalPlayer.Character
 function CheckQuest() 
     MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
     if World1 then
