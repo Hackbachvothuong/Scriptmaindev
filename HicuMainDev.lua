@@ -11301,21 +11301,6 @@ spawn(
                                 UsefastattackPlayers = true
                                 topos(v.HumanoidRootPart.CFrame * CFrame.new(1, 1, 2))
                                 v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
-                                if _G.ConCacZ then
-           game:GetService("VirtualInputManager"):SendKeyEvent(true,"Z",false,game)
-                     wait(.1)
-           game:GetService("VirtualInputManager"):SendKeyEvent(false,"Z",false,game)
-                                end
-                            if _G.ConCacX then
-           game:GetService("VirtualInputManager"):SendKeyEvent(true,"X",false,game)
-                     wait(.1)
-           game:GetService("VirtualInputManager"):SendKeyEvent(false,"X",false,game)
-                                end
-                            if _G.ConCacC then
-           game:GetService("VirtualInputManager"):SendKeyEvent(true,"C",false,game)
-                     wait(.1)
-           game:GetService("VirtualInputManager"):SendKeyEvent(false,"C",false,game)
-                                end
                                 v.HumanoidRootPart.CanCollide = false
                                 v.Head.CanCollide = false
                                 v.Humanoid.WalkSpeed = 0          
@@ -11331,18 +11316,6 @@ spawn(
     end
 end
 )
-local meleSkills = {"Z", "X", "C"}
-local meleskill = RaceTrial:AddDropdown("SelectMeleSkills", {
-    Title = "Select Skill Kill Trial",
-    Values = meleSkills,
-    Multi = true,
-    Default = {},
-})
-meleskill:OnChanged(function(selectedValues)
-    _G.ConCacZ = table.find(selectedValues, "Z") ~= nil
-    _G.ConCacX = table.find(selectedValues, "X") ~= nil
-    _G.ConCacC = table.find(selectedValues, "C") ~= nil
-end)
 RaceTrial:AddButton({
         Title = "Reset Character",
         Description = "",
